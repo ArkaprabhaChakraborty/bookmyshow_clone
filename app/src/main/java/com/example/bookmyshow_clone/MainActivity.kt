@@ -10,7 +10,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        showMovies(Movies.list!!)
+        fetchMovies()
+    }
+
+    private fun fetchMovies() {
+        val internetconnection = NetworkHelper(this)
+        if (internetconnection.isNetworkConnected())
+        {
+
+        }
+        else
+        {
+
+        }
     }
 
     private fun showMovies(movies: ArrayList<Movie>)
