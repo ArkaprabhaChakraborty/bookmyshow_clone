@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Bookmyshow_clone</string>
+    <string name="error_msg">404 Error!!</string>
+    <string name="nointernet">Oops no internet!!</string>
 </resources>
